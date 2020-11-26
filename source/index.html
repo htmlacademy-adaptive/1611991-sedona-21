@@ -28,7 +28,7 @@
               <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Фото и видеоå</a>
+              <a href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
               <a href="form.html">Форма отзыва</a>
@@ -59,21 +59,23 @@
           height="214"
           alt="Добро пожаловать в Седону!"
         />
+        <div class="intro__text-container">
+          <b class="intro__title">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </b>
+          <p class="intro__action-text">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </div>
       </section>
 
       <section class="advantages">
-        <h2 class="advantages__title">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </h2>
-        <p class="advantages__action-text">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        </p>
-
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ol class="advantages__list">
           <li class="advantages__item advantages__item--active">
             <div class="advantages__texts">
               <h3 class="advantages__title">Настоящий городок</h3>
-              <small class="advantages__index">– № 1 –</small>
+              <span class="advantages__index">&ndash; № 1 &ndash;</span>
               <p class="advantages__description">
                 Седона не аттракцион для туристов, там течет своя жизнь
               </p>
@@ -86,41 +88,20 @@
               alt="Город"
             />
             <ul class="advantages__features">
-              <li class="advantages__feature">
-                <img
-                  class="advantages__feature-icon"
-                  src="https://picsum.photos/40/40"
-                  width="40"
-                  height="40"
-                  alt="Домик"
-                />
-                <h4 class="advantages__feature-title">Жилье</h4>
+              <li class="advantages__feature advantages__feature--house">
+                <b class="advantages__feature-title">Жилье</b>
                 <p class="advantages__feature-description">
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </li>
-              <li class="advantages__feature">
-                <img
-                  class="advantages__feature-icon"
-                  src="https://picsum.photos/40/40"
-                  width="40"
-                  height="40"
-                  alt="Сувениры"
-                />
-                <h4 class="advantages__feature-title">Сувениры</h4>
+              <li class="advantages__feature advantages__feature--souvenirs">
+                <b class="advantages__feature-title">Сувениры</b>
                 <p class="advantages__feature-description">
                   Не только китайского, но и местного производства!
                 </p>
               </li>
-              <li class="advantages__feature">
-                <img
-                  class="advantages__feature-icon"
-                  src="https://picsum.photos/40/40"
-                  width="40"
-                  height="40"
-                  alt="Еда"
-                />
-                <h4 class="advantages__feature-title">Еда</h4>
+              <li class="advantages__feature advantages__feature--food">
+                <b class="advantages__feature-title">Еда</b>
                 <p class="advantages__feature-description">
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
@@ -131,7 +112,7 @@
           <li class="advantages__item advantages__item--active">
             <div class="advantages__texts">
               <h3 class="advantages__title">Там есть мост дьявола</h3>
-              <small class="advantages__index">– № 2 –</small>
+              <span class="advantages__index">&ndash; № 2 &ndash;</span>
               <p class="advantages__description">
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
@@ -148,7 +129,7 @@
           <li class="advantages__item">
             <div class="advantages__texts">
               <h3 class="advantages__title">Небольшая площадь</h3>
-              <small class="advantages__index">– № 3 –</small>
+              <span class="advantages__index">&ndash; № 3 &ndash;</span>
               <p class="advantages__description">
                 Все интересные места находятся очень близко
               </p>
@@ -158,7 +139,7 @@
           <li class="advantages__item">
             <div class="advantages__texts">
               <h3 class="advantages__title">Красивая дорога</h3>
-              <small class="advantages__index">– № 4 –</small>
+              <span class="advantages__index">&ndash; № 4 &ndash;</span>
               <p class="advantages__description">
                 Ехать в седону из Лас-Вегаса совсем не скучно!
               </p>
@@ -168,7 +149,7 @@
           <li class="advantages__item">
             <div class="advantages__texts">
               <h3 class="advantages__title">Мало туристов</h3>
-              <small class="advantages__index">– № 5 –</small>
+              <span class="advantages__index">&ndash; № 5 &ndash;</span>
               <p class="advantages__description">
                 Большинство едет в гранд каньон и толпится там
               </p>
@@ -178,7 +159,8 @@
       </section>
 
       <section class="offer">
-        <h2 class="offer__title">Заинтересовались?</h2>
+        <h2 class="visually-hidden">Оформить заявку</h2>
+        <b class="offer__title">Заинтересовались?</b>
         <p class="offer__text">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
