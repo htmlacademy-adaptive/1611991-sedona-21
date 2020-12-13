@@ -81,7 +81,7 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ol class="advantages__list">
-          <li class="advantages__item advantages__item--active">
+          <li class="advantages__item">
             <div class="advantages__texts">
               <h3 class="advantages__title">Настоящий городок</h3>
               <span class="advantages__index">&ndash; № 1 &ndash;</span>
@@ -89,13 +89,24 @@
                 Седона не аттракцион для туристов, там течет своя жизнь
               </p>
             </div>
-            <img
-              class="advantages__image"
-              src="https://picsum.photos/520/260"
-              width="520"
-              height="260"
-              alt="Город"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x"
+              />
+              <img
+                class="advantages__image"
+                src="img/city-mobile.jpg"
+                srcset="img/city-mobile@2x.jpg 2x"
+                width="320"
+                height="260"
+                alt="Город"
+              />
+            </picture>
             <ul class="advantages__features">
               <li class="advantages__feature advantages__feature--house">
                 <b class="advantages__feature-title">Жилье</b>
@@ -103,13 +114,13 @@
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </li>
-              <li class="advantages__feature advantages__feature--souvenirs">
+              <li class="advantages__feature advantages__feature--gift">
                 <b class="advantages__feature-title">Сувениры</b>
                 <p class="advantages__feature-description">
                   Не только китайского, но и местного производства!
                 </p>
               </li>
-              <li class="advantages__feature advantages__feature--food">
+              <li class="advantages__feature advantages__feature--burger">
                 <b class="advantages__feature-title">Еда</b>
                 <p class="advantages__feature-description">
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
@@ -118,7 +129,7 @@
             </ul>
           </li>
 
-          <li class="advantages__item advantages__item--active">
+          <li class="advantages__item">
             <div class="advantages__texts">
               <h3 class="advantages__title">Там есть мост дьявола</h3>
               <span class="advantages__index">&ndash; № 2 &ndash;</span>
@@ -126,16 +137,27 @@
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
-            <img
-              class="advantages__image"
-              src="https://picsum.photos/520/260"
-              width="520"
-              height="260"
-              alt="Мост дьявола"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x"
+              />
+              <img
+                class="advantages__image"
+                src="img/bridge-mobile.jpg"
+                srcset="img/bridge-mobile@2x.jpg 2x"
+                width="320"
+                height="260"
+                alt="Мост дьявола"
+              />
+            </picture>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--short">
             <div class="advantages__texts">
               <h3 class="advantages__title">Небольшая площадь</h3>
               <span class="advantages__index">&ndash; № 3 &ndash;</span>
@@ -145,7 +167,7 @@
             </div>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--short">
             <div class="advantages__texts">
               <h3 class="advantages__title">Красивая дорога</h3>
               <span class="advantages__index">&ndash; № 4 &ndash;</span>
@@ -155,7 +177,7 @@
             </div>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--short">
             <div class="advantages__texts">
               <h3 class="advantages__title">Мало туристов</h3>
               <span class="advantages__index">&ndash; № 5 &ndash;</span>
