@@ -1,0 +1,44 @@
+.page-header {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  background-color: $white;
+  color: $black;
+}
+
+.page-header__logo-container {
+  position: relative;
+
+  order: 2;
+  width: 100%;
+  height: 56px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      width: 187px;
+      height: 97px;
+      background-image: url("../../img/logo-desktop-background.svg");
+    }
+  }
+}
