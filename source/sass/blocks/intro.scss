@@ -68,13 +68,16 @@
   line-height: 26px;
   color: $black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .intro__action-text {
   margin: 0;
 
   font-size: 14px;
-  font-weight: normal;
   line-height: 26px;
   color: $light-gray;
   text-align: center;

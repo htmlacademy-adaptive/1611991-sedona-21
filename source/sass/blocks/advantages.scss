@@ -1,4 +1,6 @@
 .advantages {
+  width: 100%;
+  max-width: 1200px;
 }
 
 .advantages__list {
@@ -78,6 +80,7 @@
   justify-items: center;
   padding-top: 70px;
   padding-bottom: 40px;
+  width: 100%;
 
   background-color: $lightblue;
 
@@ -114,10 +117,17 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .advantages__index {
   display: block;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .advantages__description {
@@ -238,9 +248,15 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__feature-description {
   margin: 0;
+  font-size: 14px;
+  line-height: 21px;
   color: $light-gray;
 }
