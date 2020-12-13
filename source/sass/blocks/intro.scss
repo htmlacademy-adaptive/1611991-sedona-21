@@ -1,0 +1,77 @@
+.intro {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.intro__image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 389px;
+
+  background-image: url("../../img/intro-background-mobile.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 518px;
+    background-image: url("../../img/intro-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-background-desktop@2x.jpg");
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 57px;
+    background-image: url("../../img/intro-triangle.svg");
+    background-size: 100% 57px;
+    background-repeat: no-repeat;
+  }
+}
+
+.intro__image {
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+.intro__text-container {
+  display: grid;
+  grid-gap: 26px;
+  max-width: 520px;
+  padding: 0 18px;
+  margin: 32px auto 19px;
+}
+
+.intro__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+}
+
+.intro__action-text {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  color: $light-gray;
+  text-align: center;
+}
