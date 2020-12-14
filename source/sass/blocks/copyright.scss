@@ -1,0 +1,17 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__text {
+  margin: 0;
+  margin-right: 13px;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: $black;
+}
+
+.copyright__logo {
+  display: flex;
+}
