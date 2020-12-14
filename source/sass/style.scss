@@ -1,13 +1,14 @@
+// Fonts
+@import "global/fonts.scss";
 // Variables
 @import "global/variables.scss";
 // Global
 @import "global/global.scss";
-// Fonts
-@import "global/fonts.scss";
 
 // Blocks
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
+@import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
