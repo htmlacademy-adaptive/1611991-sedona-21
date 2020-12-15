@@ -3,7 +3,7 @@
   justify-items: center;
   grid-gap: 36px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 960px;
   padding: 28px 0;
   margin: 0 auto;
 
@@ -13,6 +13,11 @@
     justify-content: space-between;
     grid-gap: 0;
     padding: 36px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 

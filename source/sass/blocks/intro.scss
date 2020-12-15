@@ -73,6 +73,12 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+  }
 }
 
 .intro__action-text {

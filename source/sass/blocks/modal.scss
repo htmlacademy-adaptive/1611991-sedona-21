@@ -1,0 +1,97 @@
+.modal {
+  display: none;
+  width: 100%;
+
+  &--opened {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--success {
+    .modal__container {
+      padding-bottom: 0;
+    }
+
+    .modal__button-container {
+      width: 100%;
+      padding: 20px;
+
+      @media (min-width: $tablet-width) {
+        padding: 44px 90px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 640px;
+    }
+  }
+
+  &--failure {
+    @media (min-width: $tablet-width) {
+      width: 400px;
+
+      .modal__title {
+        padding: 0 95px;
+      }
+
+      .modal__text {
+        padding: 0 60px;
+      }
+
+      .modal__button-container {
+        width: 272px;
+      }
+    }
+  }
+}
+
+.modal__container {
+  display: grid;
+  justify-items: center;
+  grid-gap: 25px;
+  padding-top: 38px;
+  padding-bottom: 35px;
+
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 30px;
+    padding-top: 55px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+}
+
+.modal__text {
+  margin: 0;
+  padding: 0 40px;
+
+  color: $light-gray;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 444px;
+    padding: 0;
+  }
+}
+
+.modal__button-container {
+  width: 180px;
+  background-color: $input-background;
+}
