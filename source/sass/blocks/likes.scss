@@ -1,0 +1,27 @@
+.likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    svg path {
+      opacity: 1;
+      fill: $white;
+    }
+  }
+}
+
+.likes__amount {
+  margin-left: 14px;
+  font-weight: bold;
+  line-height: 1;
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}

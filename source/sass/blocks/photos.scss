@@ -1,0 +1,159 @@
+.photos {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.photos__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 267px;
+  }
+}
+
+.photos__item {
+  position: relative;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 15px;
+  list-style: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $disabled-gray;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &:not(:last-child) {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    &:first-child {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+    }
+
+    &:nth-child(3) {
+      .photos__description {
+        background-color: $disabled-gray;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      grid-column: 1 / span 3;
+      grid-row: 1;
+    }
+
+    &:nth-child(3) {
+      .photos__description {
+        background-color: rgba($black, 0.3);
+      }
+    }
+  }
+}
+
+.photos__image {
+  display: flex;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+}
+
+.photos__description {
+  display: grid;
+  grid-gap: 15px;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+    padding: 22px 22px 20px 20px;
+    background-color: $input-background;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($black, 0.3);
+    color: $white;
+  }
+}
+
+.photos__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.photos__author {
+  margin: 0;
+  line-height: 1;
+  color: $light-gray;
+  text-transform: none;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.photos__likes {
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / span 2;
+    justify-self: flex-end;
+  }
+}
