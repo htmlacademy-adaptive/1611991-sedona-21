@@ -79,6 +79,12 @@
       font-size: 30px;
     }
   }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+  }
 }
 
 .intro__action-text {
