@@ -4,3 +4,4 @@
 4. module5-task1
 5. module5-task2
 6. module5-task3
+7. module6-task1
