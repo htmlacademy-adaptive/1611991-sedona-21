@@ -320,7 +320,7 @@
   &--phone {
     &::after {
       display: block;
-      background-image: url("../../img/icon-phone.svg");
+      background-image: url("../../img/icons/icon-phone.svg");
       background-size: 18px 18px;
     }
   }
@@ -328,7 +328,7 @@
   &--email {
     &::after {
       display: block;
-      background-image: url("../../img/icon-mail.svg");
+      background-image: url("../../img/icons/icon-mail.svg");
       background-size: 16px 12px;
     }
   }
@@ -378,7 +378,7 @@
 .form__checkbox-input {
   &:checked + .form__label {
     &::before {
-      background-image: url("../../img/icon-checkmark.svg");
+      background-image: url("../../img/icons/icon-checkmark.svg");
       background-size: 24px 17px;
       background-position: center;
       background-repeat: no-repeat;
