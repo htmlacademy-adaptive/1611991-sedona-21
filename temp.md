@@ -1,9 +1,0 @@
-1. module4-task1
-2. module4-task2
-3. module4-task3
-4. module5-task1
-5. module5-task2
-6. module5-task3
-7. module6-task1
-8. module6-task2
-9. module6-task3
