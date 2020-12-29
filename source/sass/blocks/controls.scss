@@ -71,20 +71,24 @@
     margin-right: 0;
   }
 
+  svg {
+    fill: $controls-gray;
+  }
+
   @media (min-width: $tablet-width) {
-    svg path {
+    svg {
       fill: $white;
     }
 
     &:hover,
     &:focus {
-      svg path {
+      svg {
         opacity: 0.6;
       }
     }
 
     &:active {
-      svg path {
+      svg {
         opacity: 0.3;
       }
     }
