@@ -91,17 +91,47 @@
             </div>
             <picture>
               <source
+                type="image/webp"
                 media="(min-width: 1200px)"
-                srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x"
+                srcset="
+                  img/content/city/city-desktop.webp    1x,
+                  img/content/city/city-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/content/city/city-tablet.webp    1x,
+                  img/content/city/city-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/content/city/city-mobile.webp    1x,
+                  img/content/city/city-mobile@2x.webp 2x
+                "
+              />
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/content/city/city-desktop.jpg    1x,
+                  img/content/city/city-desktop@2x.jpg 2x
+                "
               />
               <source
                 media="(min-width: 768px)"
-                srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x"
+                srcset="
+                  img/content/city/city-tablet.jpg    1x,
+                  img/content/city/city-tablet@2x.jpg 2x
+                "
               />
               <img
                 class="advantages__image"
-                src="img/city-mobile.jpg"
-                srcset="img/city-mobile@2x.jpg 2x"
+                src="img/content/city/city-mobile.jpg"
+                srcset="img/content/city/city-mobile@2x.jpg 2x"
                 width="320"
                 height="260"
                 alt="Город"
@@ -139,17 +169,47 @@
             </div>
             <picture>
               <source
+                type="image/webp"
                 media="(min-width: 1200px)"
-                srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x"
+                srcset="
+                  img/content/bridge/bridge-desktop.webp    1x,
+                  img/content/bridge/bridge-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/content/bridge/bridge-tablet.webp    1x,
+                  img/content/bridge/bridge-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/content/bridge/bridge-mobile.webp    1x,
+                  img/content/bridge/bridge-mobile@2x.webp 2x
+                "
+              />
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/content/bridge/bridge-desktop.jpg    1x,
+                  img/content/bridge/bridge-desktop@2x.jpg 2x
+                "
               />
               <source
                 media="(min-width: 768px)"
-                srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x"
+                srcset="
+                  img/content/bridge/bridge-tablet.jpg    1x,
+                  img/content/bridge/bridge-tablet@2x.jpg 2x
+                "
               />
               <img
                 class="advantages__image"
-                src="img/bridge-mobile.jpg"
-                srcset="img/bridge-mobile@2x.jpg 2x"
+                src="img/content/bridge/bridge-mobile.jpg"
+                srcset="img/content/bridge/bridge-mobile@2x.jpg 2x"
                 width="320"
                 height="260"
                 alt="Мост дьявола"
@@ -233,13 +293,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                class="social__logo-image"
-                src="img/icon-twitter.svg"
-                width="18"
-                height="15"
-                alt="Twitter"
-              />
+              <svg class="social__logo-image" width="18" height="15">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
             </a>
           </li>
 
@@ -250,13 +306,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                class="social__logo-image"
-                src="img/icon-facebook.svg"
-                width="9"
-                height="19"
-                alt="Facebook"
-              />
+              <svg class="social__logo-image" width="9" height="19">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
             </a>
           </li>
 
@@ -267,13 +319,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                class="social__logo-image"
-                src="img/icon-youtube.svg"
-                width="20"
-                height="14"
-                alt="Youtube"
-              />
+              <svg class="social__logo-image" width="20" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -287,13 +335,9 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            class="copyright__logo-image"
-            src="img/htmlacademy.svg"
-            width="27"
-            height="35"
-            alt="HTML Academy"
-          />
+          <svg class="copyright__logo-image" width="27" height="35">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </footer>
