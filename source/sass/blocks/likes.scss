@@ -3,14 +3,18 @@
   justify-content: flex-start;
   align-items: flex-end;
 
+  svg {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    svg path {
-      opacity: 1;
+    svg {
       fill: $white;
+      opacity: 1;
     }
   }
 }
