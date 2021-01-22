@@ -14,4 +14,15 @@
 
 .copyright__logo {
   display: flex;
+
+  &:hover,
+  &:focus {
+    fill: $lightblue;
+  }
+
+  &:active {
+    .copyright__logo-image {
+      opacity: 0.3;
+    }
+  }
 }
