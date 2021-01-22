@@ -20,7 +20,9 @@ const styles = () => {
     .src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
-    .pipe(postcss([autoprefixer(), csso()]))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(postcss([csso()]))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
