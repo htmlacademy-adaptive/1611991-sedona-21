@@ -17,4 +17,15 @@
   width: 46px;
   height: 48px;
   background-color: $lightblue;
+
+  &:hover,
+  &:focus {
+    background-color: $mobile-menu-background-hover;
+  }
+
+  &:active {
+    .social__logo-image {
+      opacity: 0.3;
+    }
+  }
 }
